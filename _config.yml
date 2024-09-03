@@ -1,6 +1,6 @@
 # Site settings
 title: 职业杂谈
-description: 'Artificial Intelligence trends and concepts made easy.' # this means to ignore newlines until "baseurl:"
+description: '让职业生活多些经历少些迷茫' # this means to ignore newlines until "baseurl:"
 permalink: ':title:output_ext'
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://aegooooon.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -24,16 +24,16 @@ logo-dark: "/assets/img/branding/MVM-logo-full-dark.svg"
 highlight_theme: syntax-base16.monokai.dark # select a dark theme for the code highlighter if needed
 
 # Author settings
-author: Armando Maynez # add your name
+author: 访谈小组 # add your name
 author-pic: Myself_Neon_grey.jpg
 about-author: Engineer, industry executive, research enthusiast. Avid learner with diverse interests in coding, machine learning, artificial intelligence and reinforcement learning. 17+ years of experience working in multinational corporations.
 
 # Contact links
-email: armando.maynez@gmail.com # Add your Email address
-phone: # Add your Phone number
-website: https://amaynez.github.io # Add your website
-linkedin: amaynez # Add your Linkedin handle
-github: amaynez # Add your Github handle
+email: 3062018430@qq.com # Add your Email address
+phone: # +852 59380790
+website: https://aegooooon.github.io # Add your website
+linkedin: aegooooon # Add your Linkedin handle
+github: aegooooon # Add your Github handle
 twitter: '@MvmThe' # Add your Twitter handle
 bandcamp: armandomaynez # Add your Bandcamp username
 stackoverflow: stackoverflow # Add your stackoverflow account
