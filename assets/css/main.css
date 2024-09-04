@@ -772,7 +772,7 @@ svg.menu-icon-house {
 
 .results-search {
   list-style: none;
-  overflow: scroll;
+  overflow: hidden;
   margin: 0;
   padding: 0;
   max-height: 80vh;
