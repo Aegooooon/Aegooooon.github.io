@@ -1160,8 +1160,8 @@ a.tag.side {
     position: sticky;
     top: 32px;
     width: 115px;
-    margin-left: -135px;
-    float: left;
+    margin-right: -135px;
+    float: right;
   }
   .sidebar.side .tag-cloud{
     display:block;
@@ -1173,7 +1173,7 @@ a.tag.side {
     width: 20px;
     margin: auto;
     cursor: pointer;
-    margin-right: 55px;
+    margin-left: 55px;
   }
   .share-icons.side{
     display:block;
