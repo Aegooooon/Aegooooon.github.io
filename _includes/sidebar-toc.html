@@ -6,3 +6,13 @@
     {% include toc.html sanitize=true html=content h_min=1 h_max=6 class="toc-content" id="toc-content" item_class="toc-item-%level%" submenu_class="toc-submenu-%level%" skip_no_ids=true %}
   </nav>
 </aside>
+<style>
+  .toc {
+    overflow: hidden; /* 或使用 overflow-x 和 overflow-y 分别控制 */
+  }
+
+  /* 如果需要兼容Webkit浏览器 */
+  .toc::-webkit-scrollbar {
+    display: none;
+  }
+</style>
