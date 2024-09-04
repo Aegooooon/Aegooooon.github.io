@@ -6,10 +6,10 @@ permalink: about:output_ext
 {% include calculate_relative_base.html %}
 {% include escape-404.html %}
 
-<section class="author-box">
+<!--<section class="author-box">
   <div class="narrow-column">
     <a href='{{ site.website }}'><img src="{{ relativebase }}assets/img/{% if site.author-pic %}{{site.author-pic}}{% endif %}" alt="{{ site.author }}" class="author-img"></a>
-    <!--<ul class="contact-icons">
+    <ul class="contact-icons">
       {% if site.twitter %}
       <li class="twitter"><a class="twitter" href="https://twitter.com/{{site.twitter}}" target="_blank"><i class="fa fa-twitter"></i></a></li>
       {% endif %}
@@ -25,10 +25,53 @@ permalink: about:output_ext
       {% if site.stackoverflow %}
       <li class="stackoverflow"><a class="stackoverflow" href="https://stackoverflow.com/users/{{site.stackoverflow}}"><i class="fa fa-stack-overflow"></i></a></li>
       {% endif %}
-    </ul>-->
+    </ul>
   </div>
   <div class="author-desc">
     <h3>{{site.author}}</h3>
     <p>{{site.about-author}}</p>
   </div>
-</section>
+</section>-->
+
+<h2>团队成员</h2>
+<div class="small-wrapper">
+    <div class="about-container">
+      <section class="about-header">
+        <div class="author-image-container">
+          <img src="{{ relativebase }}/assets/img/info/zyc.jpg" alt="zyc"></a>
+        </div>
+        <h3>zyc</h3>
+        <p class="subtitle">技校螺丝钉</p>
+        <p class="subtitle">邮箱：yichong-23@mails.tsinghua.edu.cn</p>
+    </div> <!-- End About Container -->
+    <div class="about-container">
+      <section class="about-header">
+        <div class="author-image-container">
+          <img src="{{ relativebase }}/assets/img/info/qxz.jpg" alt="qxz"></a>
+        </div>
+        <h3>qxz</h3>
+        <p class="subtitle">天命打工人</p>
+        <p class="subtitle">邮箱：qxz1026@connect.hku.hk</p>
+    </div> <!-- End About Container -->
+  </div> <!-- End Small Wrapper -->
+  <div class="about-container">
+    <section class="about-header">
+      <div class="author-image-container">
+        <img src="{{ relativebase }}/assets/img/info/hdc.jpg" alt="hdc"></a>
+      </div>
+      <h3>hdc</h3>
+      <p class="subtitle">写个简介真难</p>
+      <p class="subtitle">邮箱：23307110083@m.fudan.edu.cn</p>
+  </div> <!-- End About Container -->
+</div> <!-- End Small Wrapper -->
+<div class="about-container">
+    <section class="about-header">
+      <div class="author-image-container">
+        <img src="{{ relativebase }}/assets/img/info/csy.jpg" alt="csy"></a>
+      </div>
+      <h3>csy</h3>
+      <p class="subtitle">体育爱好者</p>
+      <p class="subtitle">邮箱：siyuan-c23@mails.tsinghua.edu.cn</p>
+  </div> <!-- End About Container -->
+</div> <!-- End Small Wrapper -->
+
