@@ -1196,13 +1196,13 @@ a.tag.side {
 /* = = = = = = = = = = Right Sidebar TOC  = = = = = = = = = = */
 aside.toc {
   line-height: 1.4;
-  font-size: .5em;
+  font-size: .9em;
   font-family: sans-serif;
   font-weight:var(--font1-bold);
   width: max-content;
 }
 .toc {
-  max-width: 480px;
+  max-width: 720px;
 }
 .toc-title {
   padding: 5px;
@@ -1457,7 +1457,7 @@ tweet a {
           border-top-right-radius: 20px;
   -webkit-box-shadow: 0px 2px 4px var(--shadow);
           box-shadow: 0px 2px 4px var(--shadow);
-  max-width: 800px;
+  max-width: 1200px;
 }
 /* full width image in posts */
 img[src$="#full"] {
