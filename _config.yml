@@ -54,15 +54,19 @@ extensions:
   mermaid_enable: true
 
 # Comments
-comments: utteranc  #[disqus, utteranc]
+comments: giscus  #[disqus, utteranc, giscus]
 comments_opts:
-  comments_curtain: yes # leave empty to show the disqus embed directly
-  repo: # The GitHub repo URL.  https://utteranc.es/
-  issue_term: # The GitHub issue label
-  label: # The GitHub comments label
-  theme: # The GitHub comment's there. e.g. github-dark
-  # Disqus
-  discus_identifier: # Add your discus identifier
+  # Utteranc
+  utteranc_repo: "" # The GitHub repo URL for utteranc, e.g., "owner/repo"
+  utteranc_issue_term: "" # The GitHub issue label for utteranc
+  utteranc_label: "" # The GitHub comments label for utteranc
+  utteranc_theme: "" # The GitHub comment's theme for utteranc, e.g. github-dark
+  
+  # Giscus
+  giscus_repo: "Aegooooon/Aegooooon.github.io"
+  giscus_repo_id: "R_kgDOMsVIHA"
+  giscus_mapping: "pathname"
+  giscus_theme: "light_high_contrast"
 
 # Build settings
 markdown: kramdown

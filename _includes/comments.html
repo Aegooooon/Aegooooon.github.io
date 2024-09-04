@@ -3,7 +3,7 @@
         {% if site.comments and site.comments_opts.comments_curtain %}
         <div class="row" id="comment-curtain">
             <div class="col-lg-8 col-sm-10 mr-auto ml-auto">
-                <h2 class="page-subtitle">评论</h2>
+                <h2 class="page-subtitle">Comments</h2>
                 <div class="comments-trigger" onClick="toggle_comments()">
                     <i class="fa fa-comments"></i>&nbsp;&nbsp;Write a comment ...
                 </div>
@@ -32,6 +32,21 @@
                 })();
             </script>
             <noscript>Please enable JavaScript to view the comments.</noscript>
+        {% elsif site.comments == 'giscus' %}
+            <div id="comment-layout">
+                <script src="https://giscus.app/client.js"
+                    data-repo="{{ site.comments_opts.repo }}"
+                    data-repo-id="{{ site.comments_opts.repo_id }}"
+                    data-category="{{ site.comments_opts.category }}"
+                    data-category-id="{{ site.comments_opts.category_id }}"
+                    data-mapping="{{ site.comments_opts.mapping | default: 'pathname' }}"
+                    data-reactions-enabled="{{ site.comments_opts.reactions_enabled | default: '1' }}"
+                    data-emit-metadata="{{ site.comments_opts.emit_metadata | default: '0' }}"
+                    data-theme="{{ site.comments_opts.theme | default: 'light' }}"
+                    crossorigin="anonymous"
+                    async>
+                </script>
+            </div>
         {% endif %}
     </div>
 </section> <!-- End Comment Area -->
