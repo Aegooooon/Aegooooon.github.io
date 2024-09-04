@@ -21,7 +21,7 @@
                 </script>
             </div>
             {% endif %}
-        {% elsif site.comments == 'disqus' and site.comments_opts.discus_identifier %}
+        {% else if site.comments == 'disqus' and site.comments_opts.discus_identifier %}
             <div id="comment-layout"></div>
             <script>
                 (function () {
@@ -33,7 +33,7 @@
             </script>
             <noscript>Please enable JavaScript to view the comments.</noscript>
         {% endif %}
-        {% elsif site.comments == 'giscus' and site.comments_opts.giscus_repo and site.comments_opts.giscus_repo_id and site.comments_opts.giscus_mapping %}
+        {% else if site.comments == 'giscus' and site.comments_opts.giscus_repo and site.comments_opts.giscus_repo_id and site.comments_opts.giscus_mapping %}
             <div id="giscus-comments"></div>
             <script src="https://giscus.app/client.js"
                     data-repo="{{ site.comments_opts.giscus_repo }}"
