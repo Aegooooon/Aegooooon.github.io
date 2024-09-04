@@ -3,7 +3,7 @@ aside.toc {
     line-height: 1.2;
 }
 .toc {
-  margin:0;
+  margin:auto;
   max-width: 480px;
 }
 .toc-title {
