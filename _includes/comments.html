@@ -11,7 +11,7 @@
         </div>
         {% endif %}
 
-        {% if site.comments == 'utteranc' %}
+        {% elsif site.comments == 'utteranc' %}
             {% if site.comments_opts.repo %}
             <div id="comment-layout">
                 <script src="https://utteranc.es/client.js" repo="{{ site.comments_opts.repo }}"
