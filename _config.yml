@@ -54,7 +54,7 @@ extensions:
   mermaid_enable: true
 
 # Comments
-comments: utteranc  #[disqus, utteranc, giscus]
+comments: giscus  #[disqus, utteranc, giscus]
 comments_opts:
   # Utteranc
   utteranc_repo: "" # The GitHub repo URL for utteranc, e.g., "owner/repo"
