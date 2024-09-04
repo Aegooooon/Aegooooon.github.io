@@ -10,7 +10,7 @@ category: opinion
 author: Armando Maynez
 description: "As neural networks are used more and more in the creative process, text, images and even music are now created by AI, but who owns the copyright for those works?"
 ---
-Recently I was [reading an article](https://www.rollingstone.com/music/music-features/nirvana-kurt-cobain-ai-song-1146444/) about a cool project that intends to have a neural network create songs of the late club of the 27 (artists that have tragically died at age 27 or near, and in the height of their respective careers), artists such as Amy Winehouse, Jimmy Hendrix, Curt Cobain and Jim Morrison.
+本篇采访对象是美国一家上市科技公司会计部门的主管，她本科就读于一所中游985高校，在高考志愿填报中阴阳差错地被调剂到了自己并不喜欢的物理专业，后来她出国转行，在美国取得会计的硕士学位，后来一直留在美国工作到今天。这篇采访主要介绍了一些美国会计工作的日常工作、生活、晋升途径等等，相应的内容在中国可能有所不同，可以作为参照。
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/tjzOzuKQhSM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
