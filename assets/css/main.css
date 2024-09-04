@@ -1123,7 +1123,7 @@ a.tag.side {
   margin-bottom:1.5em
 }
 .share-button {
-  margin-left: 3px;
+  margin-right: 3px;
   color:var(--accent-dark);
   vertical-align: top;
 }
@@ -1160,8 +1160,8 @@ a.tag.side {
     position: sticky;
     top: 32px;
     width: 115px;
-    margin-right: -135px;
-    float: right;
+    margin-left: -135px;
+    float: left;
   }
   .sidebar.side .tag-cloud{
     display:block;
@@ -1173,7 +1173,7 @@ a.tag.side {
     width: 20px;
     margin: auto;
     cursor: pointer;
-    margin-left: 55px;
+    margin-right: 55px;
   }
   .share-icons.side{
     display:block;
@@ -1232,7 +1232,7 @@ path.fa-secondary {
   padding: 8px 0 8px 0;
 }
 .toc-sign {
-  float: left;
+  float: right;
   width: 10px;
   cursor: pointer;
   color: var(--text);
@@ -1274,7 +1274,7 @@ path.fa-secondary {
     top: 32px;
     width: 180px;
     margin-right: -210px;
-    float: left;
+    float: right;
   }
   .toc-content{
     max-height: calc(100vh - 7em);
@@ -1457,7 +1457,7 @@ tweet a {
           border-top-right-radius: 20px;
   -webkit-box-shadow: 0px 2px 4px var(--shadow);
           box-shadow: 0px 2px 4px var(--shadow);
-  max-width: 1200px;
+  max-width: 2400px;
 }
 /* full width image in posts */
 img[src$="#full"] {
