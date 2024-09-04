@@ -3,7 +3,7 @@
         {% if site.comments and site.comments_opts.comments_curtain %}
         <div class="row" id="comment-curtain">
             <div class="col-lg-8 col-sm-10 mr-auto ml-auto">
-                <h2 class="page-subtitle">评论</h2>
+                <h2 class="page-subtitle">Comments</h2>
                 <div class="comments-trigger" onClick="toggle_comments()">
                     <i class="fa fa-comments"></i>&nbsp;&nbsp;Write a comment ...
                 </div>
@@ -30,21 +30,6 @@
                     s.setAttribute('data-timestamp', +new Date());
                     (d.head || d.body).appendChild(s);
                 })();
-            </script>
-            <noscript>Please enable JavaScript to view the comments.</noscript>
-        {% endif %}
-        {% elsif site.comments == 'giscus' and site.comments_opts.giscus_repo and site.comments_opts.giscus_repo_id and site.comments_opts.giscus_mapping %}
-            <div id="giscus-comments"></div>
-            <script src="https://giscus.app/client.js"
-                    data-repo="{{ site.comments_opts.giscus_repo }}"
-                    data-repo-id="{{ site.comments_opts.giscus_repo_id }}"
-                    data-mapping="{{ site.comments_opts.giscus_mapping }}"
-                    data-strict="0"
-                    data-reactions-enabled="1"
-                    data-emit-metadata="0"
-                    data-theme="{{ site.comments_opts.giscus_theme | default: 'light' }}"
-                    crossorigin="anonymous"
-                    async>
             </script>
             <noscript>Please enable JavaScript to view the comments.</noscript>
         {% endif %}
