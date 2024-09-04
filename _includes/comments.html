@@ -33,5 +33,20 @@
             </script>
             <noscript>Please enable JavaScript to view the comments.</noscript>
         {% endif %}
+        {% elsif site.comments == 'giscus' and site.comments_opts.giscus_repo and site.comments_opts.giscus_repo_id and site.comments_opts.giscus_mapping %}
+            <div id="giscus-comments"></div>
+            <script src="https://giscus.app/client.js"
+                    data-repo="{{ site.comments_opts.giscus_repo }}"
+                    data-repo-id="{{ site.comments_opts.giscus_repo_id }}"
+                    data-mapping="{{ site.comments_opts.giscus_mapping }}"
+                    data-strict="0"
+                    data-reactions-enabled="1"
+                    data-emit-metadata="0"
+                    data-theme="{{ site.comments_opts.giscus_theme | default: 'light' }}"
+                    crossorigin="anonymous"
+                    async>
+            </script>
+            <noscript>Please enable JavaScript to view the comments.</noscript>
+        {% endif %}
     </div>
 </section> <!-- End Comment Area -->
