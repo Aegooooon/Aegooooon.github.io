@@ -32,6 +32,26 @@
                 })();
             </script>
             <noscript>Please enable JavaScript to view the comments.</noscript>
+        {% elsif site.comments == 'giscus' %}
+            <div id="comment-layout">
+                <script src="https://giscus.app/client.js"
+                    data-repo="{{ site.comments_opts.repo }}"
+                    data-repo-id="{{ site.comments_opts.repo_id }}"
+                    data-category="{{ site.comments_opts.category }}"
+                    data-category-id="{{ site.comments_opts.category_id }}"
+                    data-mapping="{{ site.comments_opts.mapping | default: 'pathname' }}"
+                    data-reactions-enabled="{{ site.comments_opts.reactions_enabled | default: '1' }}"
+                    data-emit-metadata="{{ site.comments_opts.emit_metadata | default: '0' }}"
+                    data-theme="{{ site.comments_opts.theme | default: 'light' }}"
+                    crossorigin="anonymous"
+                    async>
+                </script>
+            </div>
+        {% endif %}
+    </div>
+</section> <!-- End Comment Area -->
+
+            <noscript>Please enable JavaScript to view the comments.</noscript>
         {% endif %}
     </div>
 </section> <!-- End Comment Area -->
