@@ -772,7 +772,7 @@ svg.menu-icon-house {
 
 .results-search {
   list-style: none;
-  overflow: hidden;
+  overflow: auto;
   margin: 0;
   padding: 0;
   max-height: 80vh;
@@ -1278,7 +1278,7 @@ path.fa-secondary {
   }
   .toc-content{
     max-height: calc(100vh - 7em);
-    overflow: hidden;
+    overflow: auto;
   }
 }
 /* = = = = = = = = = = Tags = = = = = = = = = = */
