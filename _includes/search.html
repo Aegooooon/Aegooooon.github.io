@@ -13,3 +13,17 @@
     </div>
   </div>
 </div>
+
+<script>
+  // 检测是否为iOS设备
+  function isIOS() {
+    return /iPad|iPhone|iPod/.test(navigator.userAgent) && !window.MSStream;
+  }
+
+  // 修改placeholder
+  window.onload = function() {
+    if (isIOS()) {
+      document.getElementById('search-input').placeholder = '当前为iOS设备，搜索暂不支持';
+    }
+  }
+</script>
