@@ -13,3 +13,21 @@
     </div>
   </div>
 </div>
+
+<script>
+  // 检测是否为iPhone
+  function isIPhone() {
+    return /iPhone/.test(navigator.userAgent);
+  }
+  // 检测是否为iPad
+  function isIPad() {
+    return /iPad/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+  }
+  window.onload = function() {
+    if (isIPhone()) {
+      document.getElementById('search-input').placeholder = '当前iOS设备本站不支持搜索';
+    } else if (isIPad()) {
+      document.getElementById('search-input').placeholder = '当前为iPadOS设备，本站暂不支持搜索';
+    }
+  }
+</script>
