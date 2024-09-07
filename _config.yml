@@ -4,7 +4,7 @@ description: '让职业生活多些经历少些迷茫' # this means to ignore ne
 permalink: ':title:output_ext'
 baseurl: "/" # the subpath of your site, e.g. /blog
 url: "https://aegooooon.github.io" # the base hostname & protocol for your site, e.g. http://example.com
-logo: "/assets/img/branding/new/logo-text-dark2.svg"
+logo: "/assets/img/branding/new/logo-text-dark3.svg"
 logo-icon: "/assets/img/branding/new/logo-icon-dark.svg"
 logo-icon-SEO: "/assets/img/branding/new/PNG-logo-icon-dark.png" # must be a non SVG file
 
@@ -20,7 +20,7 @@ logo-icon-SEO: "/assets/img/branding/new/PNG-logo-icon-dark.png" # must be a non
 # the browser is closed or not)
 night_mode: "auto"
 
-logo-dark: "/assets/img/branding/new/logo-text-light2.svg"
+logo-dark: "/assets/img/branding/new/logo-text-light3.svg"
 highlight_theme: syntax-base16.monokai.dark # select a dark theme for the code highlighter if needed
 
 # Author settings
