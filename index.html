@@ -3,11 +3,10 @@ layout: home-page
 ---
 {% include calculate_relative_base.html %}
 <ol class="post-card-box clearfix">
-  {% assign high_priority_posts = paginator.posts | where_exp: "post", "post.priority != 'low'" %}
-  {% assign low_priority_posts = paginator.posts | where: "priority", "low" %}
-  {% assign sorted_posts = high_priority_posts | concat: low_priority_posts %}
+  {% assign sorted_posts = site.config.sorted_posts %}
+  {% assign paginated_posts = sorted_posts | slice: paginator.page * paginator.per_page, paginator.per_page %}
   
-  {% for post in sorted_posts %}
+  {% for post in paginated_posts %}
     {% include remove_double_slash.html %}
     <li>
       <div class="post-card">
