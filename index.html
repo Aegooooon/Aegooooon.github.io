@@ -2,38 +2,12 @@
 layout: home-page
 ---
 {% include calculate_relative_base.html %}
-
 <ol class="post-card-box clearfix">
-  {% assign low_priority_posts = "" | split: "" %}
-  {% assign normal_posts = "" | split: "" %}
+  {% assign high_priority_posts = paginator.posts | where_exp: "post", "post.priority != 'low'" %}
+  {% assign low_priority_posts = paginator.posts | where: "priority", "low" %}
+  {% assign sorted_posts = high_priority_posts | concat: low_priority_posts %}
   
-  {% for post in paginator.posts %}
-    {% if post.priority == "low" %}
-      {% assign low_priority_posts = low_priority_posts | push: post %}
-    {% else %}
-      {% assign normal_posts = normal_posts | push: post %}
-    {% endif %}
-  {% endfor %}
-  
-  {% for post in normal_posts %}
-    {% include remove_double_slash.html %}
-    <li>
-      <div class="post-card">
-        <a href="{{ post_url }}" title="{{ post.title }}" class="post-card-image" style="background: url('{{ relativebase }}assets/img/{{ post.img }}') center no-repeat; background-size: cover;">
-        </a>
-        <div class="post-card-body">
-          <p class="post-card-title-and-meta">
-            <a href="{{ post_url }}" class="post-card-link">
-            {{ post.title }}
-            </a>
-            {% include post_meta.html type="post-card-meta" date="none" %}
-          </p>
-        </div>
-      </div>
-    </li>
-  {% endfor %}
-  
-  {% for post in low_priority_posts %}
+  {% for post in sorted_posts %}
     {% include remove_double_slash.html %}
     <li>
       <div class="post-card">
@@ -51,3 +25,4 @@ layout: home-page
     </li>
   {% endfor %}
 </ol>
+{% include pagination.html %}
