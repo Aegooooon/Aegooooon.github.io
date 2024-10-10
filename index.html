@@ -2,8 +2,9 @@
 layout: home-page
 ---
 {% include calculate_relative_base.html %}
+{% assign sorted_posts = paginator.posts | sort: 'priority' %}
 <ol class="post-card-box clearfix">
-  {% for post in paginator.posts %}
+  {% for post in sorted_posts %}
   {% include remove_double_slash.html %}
   <li>
     <div class="post-card">
