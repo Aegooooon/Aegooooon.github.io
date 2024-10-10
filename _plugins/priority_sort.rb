@@ -1,20 +1,12 @@
 module Jekyll
-  module PrioritySort
-    def priority_sort(posts)
-      posts.sort_by do |post|
-        case post['priority']
-        when 'high'
-          1
-        when 'medium'
-          2
-        when 'low'
-          3
-        else
-          4
-        end
+  class LowPriorityLast < Generator
+    safe true
+    priority :lowest
+
+    def generate(site)
+      site.posts.docs.sort_by! do |post|
+        post.data['priority'] == 'low' ? 1 : 0
       end
     end
   end
 end
-
-Liquid::Template.register_filter(Jekyll::PrioritySort)
